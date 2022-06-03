@@ -7,10 +7,11 @@ imgBGR = cv2.imread('cat.bmp')
 imgRGB = cv2.cvtColor(imgBGR, cv2.COLOR_BGR2RGB)
 
 plt.axis('off')
-plt.imshow(imgRGB)
+plt.imshow(cv2.cvtColor(imgBGR, cv2.COLOR_BGR2RGB)) 
+plt.imshow(imgBGR)
 plt.show()
 
-# 그레이스케일 영상 출력
+# # 그레이스케일 영상 출력
 imgGray = cv2.imread('cat.bmp', cv2.IMREAD_GRAYSCALE)
 
 plt.axis('off')
